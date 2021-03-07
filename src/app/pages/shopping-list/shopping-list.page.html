@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>shopping-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <app-shopping-item *ngFor="let item of items | sortShoppingItems" [disabled]="item.checked" [item]="item"></app-shopping-item>
+  </ion-list>
+</ion-content>

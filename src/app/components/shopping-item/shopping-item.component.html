@@ -1,0 +1,5 @@
+<ion-item [disabled]="disabled" (click)="onClick()">
+  <ion-checkbox [disabled]="false" [checked]="item.checked"></ion-checkbox>
+  <ion-text>{{item.name}}</ion-text>
+  <ion-button [disabled]="false" (click)="editItem();$event.stopPropagation();" slot="end">Edit</ion-button>
+</ion-item>
